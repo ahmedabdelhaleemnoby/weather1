@@ -1,9 +1,9 @@
-import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { getCountries } from '../redux/countries/countriesSlice';
-import Country from '../components/country';
-import { getCountryStates } from '../redux/countries/statesSlice';
+import { useDispatch, useSelector } from 'react-redux';
 import Search from '../components/Search';
+import Country from '../components/country';
+import { getCountries } from '../redux/countries/countriesSlice';
+import { getCountryStates } from '../redux/countries/statesSlice';
 
 const Home = () => {
   const dispatch = useDispatch();

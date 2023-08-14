@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import { SpringSpinner } from 'react-epic-spinners';
-import { getWeather, resetStore } from '../redux/weather/weatherSlice';
+import { useDispatch, useSelector } from 'react-redux';
 import State from '../components/State';
+import { getWeather, resetStore } from '../redux/weather/weatherSlice';
 
 const Details = () => {
   const states = useSelector((store) => store.countryStates.countryStates);
